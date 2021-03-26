@@ -75,7 +75,7 @@ See also: [System Design Primer](https://github.com/donnemartin/system-design-pr
 | Sisyphus / Rapid                |                                          | [Spinnaker](https://www.spinnaker.io/), [lambdaCD](http://www.lambda.cd), screwdriver.cd, [CodeShip](https://codeship.com), [shipit-engine](https://github.com/Shopify/shipit-engine), [GoCD](https://www.gocd.org), [AWS CodeDeploy](https://aws.amazon.com/codedeploy/), [Capistrano](http://www.capistranorb.com), [Fabric](http://www.fabfile.org), [ConcourseCI](https://concourse.ci/), [samson](https://github.com/zendesk/samson) |
 | borg / borgcfg / gcl            | [Jsonnet](http://jsonnet.org/), [Cue](https://cuelang.org/) | [AWS Cloudformation](https://aws.amazon.com/cloudformation/), Puppet, Chef, Salt, Ansible, [Terraform](https://www.terraform.io), [kubecfg](https://github.com/bitnami/kubecfg), [pulumi](https://github.com/pulumi/pulumi) |
 | logging, analog                 | [StackDriver](https://cloud.google.com/stackdriver/) | [logstash](https://github.com/elastic/logstash), [fluentd](https://github.com/fluent/fluentd), [PaperTrail](https://www.papertrail.com/), [cernan](https://github.com/postmates/cernan) |
-| CodeSearch, Grimoire            | [Zoekt](https://github.com/google/zoekt) | [Sourcegraph](https://sourcegraph.com), [OpenGrok](https://github.com/OpenGrok/OpenGrok/) |
+| CodeSearch, Grimoire            | [Zoekt](https://github.com/google/zoekt) [kythe](https://github.com/kythe/kythe) | [Sourcegraph](https://sourcegraph.com), [OpenGrok](https://github.com/OpenGrok/OpenGrok/), [livegrep](https://github.com/livegrep/livegrep) |
 | Critique, Gerrit, Mondrian etc. | [Gerrit](https://www.gerritcodereview.com/) | [Reviewable](https://reviewable.io) , [Phabricator](https://www.phacility.com/phabricator/)     |
 | cider                           |                                          | [Eclipse Che](https://www.eclipse.org/che/), [Cloud9](https://c9.io/), [gitpod.io](https://gitpod.io), [Coder](https://coder.com/), [Code-Server (VSCode in a Tab)](https://github.com/cdr/code-server)|
 | buganizer                       | [Google Issue Tracker](https://issuetracker.google.com/) | [JIRA](https://www.atlassian.com/software/jira), [bugzilla](https://www.bugzilla.org/), github issues, [Linear](https://linear.app/) |
@@ -97,6 +97,7 @@ See also: [System Design Primer](https://github.com/donnemartin/system-design-pr
 | Google Internal                          | Real-World                               |
 | ---------------------------------------- | ---------------------------------------- |
 | [software engineering at google](https://arxiv.org/ftp/arxiv/papers/1702/1702.01715.pdf) | [Software Engineering at Google: Lessons Learned from Programming Over Time](https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791) |
+| [SRE @ google](https://sre.google/sre-book/table-of-contents/) | |
 | valentine                                | [Vault](https://www.vaultproject.io/), [1Password](https://support.1password.com/create-share-vaults/), [Lastpass](http://lastpass.com), [pass](https://www.passwordstore.org/) |
 | OWNERS files in repo                     | [github CODEOWNERS](https://github.com/blog/2392-introducing-code-owners) |
 | snippets                                 | [Khan/snippets](https://github.com/Khan/snippets) |
@@ -105,13 +106,14 @@ See also: [System Design Primer](https://github.com/donnemartin/system-design-pr
 | stuff (Device Management)                | [Fleetsmith](https://www.fleetsmith.com/), [jamf](https://www.jamf.com/), [rippling IT](https://www.rippling.com/it/) |
 | device security monitoring               | [Red Canary](https://redcanary.com/) |
 | beyondcorp | [beyondcorp](https://www.beyondcorp.com/) |
-| [go/ links](https://medium.com/@golinks/the-full-history-of-go-links-and-the-golink-system-cbc6d2c8bb3)                                | [golinks](https://www.golinks.io/), [go](https://github.com/kellegous/go), [Goat](https://goatcodes.com/), [trotto](https://github.com/trotto/go-links) |
+| [go/ links](https://medium.com/@golinks/the-full-history-of-go-links-and-the-golink-system-cbc6d2c8bb3)                                | [golinks](https://www.golinks.io/), [go](https://github.com/kellegous/go), [Goat](https://goatcodes.com/), [trotto](https://github.com/trotto/go-links), [go-shorten](https://github.com/thomasdesr/go-shorten) |
 | google3 philosophy                       | [innersource](https://resources.github.com/whitepapers/introduction-to-innersource/), [monorepo](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext) |
 | doing code review                        | [code review](https://google.github.io/eng-practices/review/reviewer/) |
 | safely sharing 1-time secrets            | [croc](https://github.com/schollz/croc), [onetimesecret](https://github.com/onetimesecret/onetimesecret), [privatebin](https://privatebin.info/) |
 | messaging                                | [mattermost](https://github.com/mattermost/mattermost-server), [Slack](https://slack.com), gchat |
 | tech talks | [TechTalks @ Google](https://www.youtube.com/user/GoogleTechTalks/videos) |
 | g3doc | [writethedocs](https://www.writethedocs.org/), [docs-as-code](https://idratherbewriting.com/learnapidoc/pubapis_docs_as_code.html) |
+| GUTS | [spoke](https://www.atspoke.com/) |
 
 ## PeopleOps / Culture
 | Google Internal                          | Real-World                               |
@@ -120,6 +122,7 @@ See also: [System Design Primer](https://github.com/donnemartin/system-design-pr
 | HRIS/ERP                                 | [Namely](https://namely.com), [BambooHR](https://www.bamboohr.com/), [Workday](https://workday.com), [Paylocity](https://www.paylocity.com/) |
 | [peer bonus](https://www.forbes.com/sites/jurgenappelo/2015/07/08/the-peer-to-peer-bonus-system/#33c47ef84329)   | [bonus.ly](https://bonus.ly/), [zestful](https://zestful.com) |
 | kudos  | [heytaco](https://www.heytaco.chat/), [slack ++ bot](https://github.com/tdmalone/working-plusplus/) |
+| perks | [fond](https://fond.co) |
 | talks | [Talks @ Google](https://www.youtube.com/c/talksatgoogle/videos) |
 | edge, people ops training                | [LifeLabs](http://lifelabsnewyork.com/)  |
 | googlegeist                              | [Culture Amp](https://www.cultureamp.com/), [humu](http://www.humu.com/), [tinypulse](https://www.tinypulse.com/), [peakon](https://peakon.com/) |

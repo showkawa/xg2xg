@@ -24,6 +24,13 @@
 - https://streamsets.com/
 - https://github.com/debezium/debezium
 
+### data versioning
+- https://projectnessie.org/
+
+### OLAP
+- https://pinot.apache.org/
+- https://kylin.apache.org/
+
 ### Streaming
 - kafka
 - flink
@@ -113,7 +120,12 @@
 - looker
 - periscope
 
-### piping data around for salesOps/marketingOps/CRM etc
+### etl / ingestion-as-a-service
+- fivetran
+- singer.io
+- talend
+
+### reverse-etl: piping data around for salesOps/marketingOps/CRM etc
 - https://tray.io/
 - https://www.snaplogic.com/
 - https://www.polytomic.com/
